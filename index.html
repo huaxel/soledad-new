@@ -19,6 +19,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
         rel="stylesheet">
+
+    <!-- Ken Burns Animation for Hero -->
+    <style>
+        @keyframes kenburns {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-kenburns {
+            animation: kenburns 30s ease-in-out infinite;
+        }
+    </style>
 </head>
 
 <!-- Alpine Layout Data injected via main.js -->
@@ -69,7 +90,7 @@
     <!-- SECTION: THE LEGACY (Broken Grid) -->
     <section id="legacy" class="relative py-32 bg-hacienda-black overflow-hidden">
         <!-- Watermark Typography -->
-        <div class="absolute top-0 left-0 w-full overflow-hidden opacity-5 z-0 pointer-events-none select-none">
+        <div class="absolute top-0 left-0 w-full overflow-hidden opacity-[0.03] z-0 pointer-events-none select-none">
             <span
                 class="text-[20rem] md:text-[30rem] font-serif font-black text-white leading-none -translate-y-1/2 block ml-[-10vw]">XVI</span>
         </div>
@@ -98,10 +119,22 @@
                 <div class="md:w-7/12 relative">
                     <div class="relative z-10 md:mt-32">
                         <img src="/assets/gallery/almazara-main.jpg" alt="Fachada histórica de Hacienda La Soledad"
-                            class="w-full h-auto grayscale contrast-125 brightness-90 shadow-2xl hover:grayscale-0 transition-all duration-1000">
+                            class="w-full h-auto grayscale contrast-125 brightness-90 shadow-2xl hover:grayscale-0 transition-all duration-1000 animate-kenburns">
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Bridge Text: Two Worlds, One Roof -->
+    <section class="py-20 bg-hacienda-black text-center">
+        <div class="container mx-auto px-6">
+            <p class="font-serif text-3xl md:text-4xl text-white/80 italic">
+                Dos mundos, un mismo techo.
+            </p>
+            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs mt-4">
+                Intimidad para pocos. Grandeza para muchos.
+            </p>
         </div>
     </section>
 
