@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodas en Hacienda La Soledad | Sevilla</title>
+    <meta name="description"
+        content="Celebra tu boda en un santuario del siglo XVI. Patios históricos, almazara abovedada y jardines de naranjos en Sevilla. Una novela histórica, no un cuento de hadas.">
+    <meta property="og:title" content="Bodas | Hacienda La Soledad">
+    <meta property="og:description"
+        content="Tu historia merece un escenario con la suya propia. Bodas exclusivas en Sevilla.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-hacienda-black text-hacienda-white">
+
+    <div id="nav-container"></div>
+
+    <!-- Hero -->
+    <header class="relative h-[60vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="/assets/almazara.jpg" alt="Interior de la Almazara preparada para una boda"
+                class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-hacienda-black"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 mt-20">
+            <h1 class="font-serif text-5xl md:text-7xl text-white leading-none mb-6 reveal-on-scroll">
+                Una Novela Histórica
+            </h1>
+            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-sm reveal-on-scroll">No es un cuento de hadas
+            </p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-24 container mx-auto px-6 max-w-4xl">
+        <div class="reveal-on-scroll">
+            <h2 class="text-4xl font-serif text-white mb-8">La Ceremonia</h2>
+            <p class="text-gray-400 font-light text-lg leading-relaxed mb-12">
+                Olvida el "vivieron felices para siempre" de plástico. Esto es una estructura de piedra que ha visto
+                siglos.
+                Nuestros patios no son decorados; son escenarios de gravedad y luz.
+                Aquí vienes a escribir un capítulo real, con la autoridad de 400 años bajo tus pies.
+            </p>
+        </div>
+
+        <div class="reveal-on-scroll">
+            <h2 class="text-4xl font-serif text-white mb-8">La Celebración</h2>
+            <p class="text-gray-400 font-light text-lg leading-relaxed mb-12">
+                La Almazara, con sus techos abovedados y acústica perfecta, se transforma en el salón de baile
+                definitivo.
+                Capacidad para grandes banquetes sin perder la atmósfera de exclusividad.
+                Cada rincón está diseñado para impresionar, no por su decoración, sino por su autenticidad.
+            </p>
+        </div>
+
+        <!-- Nuestros Rincones Gallery -->
+        <div class="py-24">
+            <h2 class="text-3xl font-serif text-white text-center mb-12">Nuestros Rincones</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 overflow-hidden">
+                <!-- Large Featured Item -->
+                <div class="col-span-2 row-span-2 relative group overflow-hidden h-[500px]">
+                    <img src="/assets/gallery/wedding-patio.jpg" alt="Patio decorado para ceremonia de boda"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700">
+                    </div>
+                </div>
+
+                <!-- Smaller Items -->
+                <div class="relative group overflow-hidden h-[240px]">
+                    <img src="/assets/gallery/wedding-details.jpg" alt="Detalles decorativos de boda"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="relative group overflow-hidden h-[240px]">
+                    <img src="/assets/gardens.jpg" alt="Jardines de la hacienda"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale group-hover:grayscale-0 transition-all">
+                </div>
+                <div class="relative group overflow-hidden h-[240px]">
+                    <img src="/assets/gallery/almazara-main.jpg" alt="Salón principal de la Almazara"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 sepia group-hover:sepia-0 transition-all">
+                </div>
+                <div class="relative group overflow-hidden h-[240px]">
+                    <img src="/assets/history.jpg" alt="Fachada histórica de la hacienda"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
+                </div>
+            </div>
+    </section>
+
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

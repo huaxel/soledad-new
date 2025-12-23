@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda La Soledad | Journal</title>
+    <meta name="description"
+        content="Crónicas de Hacienda La Soledad: historias de restauración, bodas de otoño, eventos de ópera y retiros corporativos en Sevilla.">
+    <meta property="og:title" content="Journal | Hacienda La Soledad">
+    <meta property="og:description" content="Historias y crónicas desde los muros de nuestra hacienda del siglo XVI.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-hacienda-black text-hacienda-white">
+
+    <div id="nav-container"></div>
+
+    <!-- Hero -->
+    <header
+        class="relative h-[50vh] w-full overflow-hidden flex items-center justify-center bg-gray-900 border-b border-white/10">
+        <div class="relative z-10 text-center px-4 mt-10">
+            <h1 class="font-serif text-5xl md:text-7xl text-white leading-none mb-6 reveal-on-scroll">
+                Journal
+            </h1>
+            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-sm reveal-on-scroll">Crónicas de la Hacienda
+            </p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-24 container mx-auto px-6 max-w-6xl">
+
+        <!-- Featured Post -->
+        <article class="flex flex-col md:flex-row gap-12 mb-24 reveal-on-scroll">
+            <div class="md:w-1/2 h-96 relative overflow-hidden group cursor-pointer">
+                <img src="/assets/almazara.jpg" alt="Restauración de la Almazara"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000">
+            </div>
+            <div class="md:w-1/2 flex flex-col justify-center">
+                <span class="text-hacienda-gold text-xs uppercase tracking-widest mb-4">Octubre 2024</span>
+                <h2
+                    class="text-3xl lg:text-4xl font-serif text-white mb-6 hover:text-hacienda-gold transition-colors cursor-pointer">
+                    La Arquitectura del Silencio: Restaurando la Almazara
+                </h2>
+                <p class="text-gray-400 font-light leading-relaxed mb-8">
+                    El proceso de recuperar las vigas originales del siglo XVI no fue una obra; fue una excavación
+                    arqueológica emocional. Descubrimos que quitar es más difícil que añadir...
+                </p>
+                <a href="#"
+                    class="text-white border-b border-white/30 pb-1 self-start hover:border-hacienda-gold hover:text-hacienda-gold transition-all">Leer
+                    Historia</a>
+            </div>
+        </article>
+
+        <!-- Grid Posts -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 reveal-on-scroll">
+
+            <article class="group cursor-pointer">
+                <div class="h-64 overflow-hidden mb-6">
+                    <img src="/assets/gardens.jpg" alt="Boda de otoño en los jardines"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0">
+                </div>
+                <span class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 block">Septiembre 2024</span>
+                <h3 class="text-xl font-serif text-white mb-4 group-hover:text-hacienda-gold transition-colors">
+                    Una Boda de Otoño en Sevilla
+                </h3>
+                <p class="text-gray-500 font-light text-sm line-clamp-3">
+                    Cómo la luz dorada de septiembre transforma los patios de la hacienda en un escenario de pintura
+                    barroca.
+                </p>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="h-64 overflow-hidden mb-6">
+                    <img src="/assets/history.jpg" alt="Noche de ópera en la hacienda"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0">
+                </div>
+                <span class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 block">Agosto 2024</span>
+                <h3 class="text-xl font-serif text-white mb-4 group-hover:text-hacienda-gold transition-colors">
+                    Noches de Ópera bajo las Estrellas
+                </h3>
+                <p class="text-gray-500 font-light text-sm line-clamp-3">
+                    Crónica del evento privado donde la acústica de la Almazara demostró ser digna de los grandes
+                    teatros de Europa.
+                </p>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div
+                    class="h-64 overflow-hidden bg-hacienda-dark mb-6 flex items-center justify-center border border-white/5">
+                    <span class="text-white/20 font-serif text-4xl">HLS</span>
+                </div>
+                <span class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 block">Julio 2024</span>
+                <h3 class="text-xl font-serif text-white mb-4 group-hover:text-hacienda-gold transition-colors">
+                    Team Building: Liderazgo y Tradición
+                </h3>
+                <p class="text-gray-500 font-light text-sm line-clamp-3">
+                    Por qué las grandes corporaciones eligen el aislamiento de nuestra hacienda para redefinir sus
+                    estrategias globales.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

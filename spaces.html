@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacios | Hacienda La Soledad - 12 Escenarios, 500 Años de Historia</title>
+    <meta name="description"
+        content="Descubre los 12 espacios únicos de Hacienda La Soledad: desde la monumental Almazara del siglo XVI hasta la majestuosa Huerta de los Naranjos.">
+    <meta property="og:title" content="Los 12 Espacios | Hacienda La Soledad">
+    <meta property="og:description"
+        content="Arquitectura del Silencio. 12 escenarios únicos para eventos inolvidables.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-white text-hacienda-black">
+
+    <div id="nav-container"></div>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-6 text-center bg-[#0F0F0F] text-white">
+        <h1 class="font-serif text-5xl md:text-7xl mb-6">Nuestros Espacios</h1>
+        <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs">12 Escenarios. 500 Años de Historia.</p>
+    </header>
+
+    <!-- Main Catalog Grid -->
+    <section class="py-24 container mx-auto px-6 max-w-6xl space-y-24">
+
+        <!-- INDOOR SPACES -->
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl text-hacienda-black mb-2">Espacios Interiores</h2>
+            <p class="text-gray-500 text-sm">Climatizados. Techos históricos. Atmósfera inigualable.</p>
+        </div>
+
+        <!-- Space: Lagar -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/spaces/lagar.jpg" alt="Lagar preparado para evento"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Lagar</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">El motor del siglo XVI
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>550</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>450</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>550 m²</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Altura: <strong>5m</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Instalación con arcada de piedra y techos con acabados en madera y ventanas. Aquí se prensaba la
+                    aceituna.
+                    Paredes que piden ser tocadas. Sólido, funcional, sin pretensiones. Ideal para bodas, recepciones y
+                    conferencias.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Atarazanas -->
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/spaces/atarazanas.jpg" alt="Interior de las Atarazanas"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Atarazanas</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Historia viva</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>350</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>280</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>350 m²</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Altura: <strong>5m</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Antigua instalación de uso industrial con elegante techo rústico y hermosa arcada con iluminación.
+                    Un espacio con carácter propio. Ideal para recepciones y eventos corporativos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Caballerizas -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/rincon-arches.jpg" alt="Arcadas de las Caballerizas"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Caballerizas</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Donde descansaban los
+                    nobles</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>200</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>150</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>200 m²</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Altura: <strong>4m</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Antiguo recinto cerrado donde se guardaban los caballos. Hermoso techo de madera y arcada con
+                    columnas de piedra. Íntimo pero imponente.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Pajar -->
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/wedding-details.jpg" alt="Detalle rústico del Pajar"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Pajar</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Donde descansaba el
+                    campo</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>200</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>130</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>200 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Antiguo lugar destinado a guardar la paja y los animales con hermoso techo de madera y arcada con
+                    columnas de piedra.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Molino -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/almazara-mill.jpg" alt="Molino de la Almazara con tinajas"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 sepia group-hover:sepia-0">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Molino (Almazara)</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Una catedral profana</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>100 m²</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">⚠️ Solo visitas culturales. Máx. 50 pax.</span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    El corazón industrial del siglo XVI. La almazara es la que da todo sentido a la hacienda: es la
+                    fábrica de transformación de la aceituna en aceite.
+                    Tinajas de sol y precisos elementos decorativos. No es un salón decorado; es una estructura con
+                    alma.
+                </p>
+            </div>
+        </div>
+
+        <!-- DIVIDER: OUTDOOR SPACES -->
+        <div class="text-center py-16 border-t border-gray-200">
+            <h2 class="font-serif text-3xl text-hacienda-black mb-2">Patios y Jardines</h2>
+            <p class="text-gray-500 text-sm">Albero. Piedra. Cielo abierto.</p>
+        </div>
+
+        <!-- Space: Patio de Labor -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/wedding-reception.jpg" alt="Celebración en el Patio de Labor"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Patio de Labor</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Un laberinto de luz</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>1500</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>1000</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>2000 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Majestuoso patio de labor con cañones del siglo XVI. El patio más grande de la hacienda. Suelo de
+                    albero,
+                    el oro del sur. La transición perfecta del día a la noche.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Patio de la Fuente -->
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/spaces/patio-fuente.jpg" alt="Patio de la Fuente con frescos"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Patio de la Fuente</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Agua y piedra</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>450</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>300</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>550 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Hermoso patio con fuente y frescos de principios del s.XVIII. Perfecto para conferencias, bodas y
+                    eventos de teambuilding.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Patio del Molino -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/almazara-main.jpg" alt="Fachada del Patio del Molino"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Patio del Molino</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Donde el aceite dormía
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>650</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>450</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>800 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Patio cuya parte superior estuvo destinada a almacén de aceite en tinajas. La parte inferior se
+                    empleaba para
+                    las labores industriales de la Hacienda.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Patio del Pozo -->
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/rincon-fountain.jpg" alt="Patio del Pozo"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Patio del Pozo</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">El abrevadero de la
+                    historia</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>500</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>1000 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Antiguo patio de los mulos con abrevadero al centro. A él se llega a través de una espectacular
+                    fachada mirador
+                    que se alcanza por una torre (con escalera de caracol) decorada con la redundancia del barroco.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Patio de la Torre -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/spaces/patio-torre.jpg" alt="Patio de la Torre mozárabe"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 sepia group-hover:sepia-0">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Patio de la Torre</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Siglo XII. Mozárabe.
+                    Defensivo.</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>1200 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Espectacular patio con torre de estilo mozárabe del año 1200. Este tipo de torre la podemos ver en
+                    medio del
+                    campo por la zona de Castilla y tenían una función defensiva.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Huerta de los Naranjos -->
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/evening-lights.jpg" alt="Huerta de los Naranjos iluminada"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Huerta de los Naranjos</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">Un claustro vegetal</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>4000</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>3000</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>6000 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Jardín que se asemeja a los antiguos claustros medievales de origen renacentista o moderno con
+                    disposición de
+                    naranjos enlazados o injertados unos en otros dando la sensación de lacería vegetal. Ideal para
+                    grandes celebraciones.
+                </p>
+            </div>
+        </div>
+
+        <!-- Space: Jardín -->
+        <div class="flex flex-col md:flex-row gap-12 items-center reveal-on-scroll group">
+            <div class="md:w-1/2">
+                <div class="h-[350px] overflow-hidden relative bg-gray-200">
+                    <img src="/assets/gallery/wedding-ceremony.jpg" alt="Ceremonia en el Jardín"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="font-serif text-3xl text-hacienda-gold mb-1">Jardín</h3>
+                <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">El crucero verde</p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
+                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>200</strong></span>
+                    <span class="bg-gray-100 px-3 py-1">Área: <strong>300 m²</strong></span>
+                </div>
+                <p class="font-light text-gray-500 leading-relaxed text-sm">
+                    Elegante jardín en forma de crucero situado en medio de la antigua huerta de cítricos. Jardín
+                    perfectamente
+                    integrado en la fachada y cerrado en sí mismo.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Technical Notes -->
+    <div class="bg-[#0F0F0F] text-white py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h3 class="font-serif text-3xl text-center mb-12">Especificaciones Técnicas</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-gray-400">
+                <ul class="space-y-3">
+                    <li>✓ Todos los espacios cubiertos climatizados.</li>
+                    <li>✓ Baños distribuidos en 2 zonas (11 cabinas mujeres / 13 hombres).</li>
+                    <li>✓ 2 baños para personas con movilidad reducida.</li>
+                    <li>✓ Espacios de office para catering.</li>
+                    <li>✓ Guardarropa.</li>
+                </ul>
+                <ul class="space-y-3">
+                    <li>✓ Sistema contra incendios.</li>
+                    <li>✓ 800 luminarias distribuidas.</li>
+                    <li>✓ 10 cuadros de 220/380V para equipos AV.</li>
+                    <li>✓ Grupo electrógeno de 115 KVAS.</li>
+                    <li>✓ Aparcamiento interior para 200 vehículos.</li>
+                </ul>
+            </div>
+            <div class="text-center mt-12">
+                <a href="/assets/hacienda-map.png" target="_blank"
+                    class="inline-block px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-xs font-bold">
+                    Descargar Dossier Técnico
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

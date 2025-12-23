@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Hacienda La Soledad</title>
+    <meta name="description" content="Política de privacidad y protección de datos de Hacienda La Soledad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-white text-hacienda-black">
+
+    <div id="nav-container"></div>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-6 text-center bg-[#0F0F0F] text-white">
+        <h1 class="font-serif text-5xl md:text-7xl mb-6">Política de Privacidad</h1>
+        <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs">Protección de Datos</p>
+    </header>
+
+    <!-- Content -->
+    <section class="py-24 container mx-auto px-6 max-w-3xl">
+        <div class="prose prose-lg text-gray-600 font-light leading-relaxed space-y-6">
+            <h2 class="font-serif text-2xl text-hacienda-black">1. Responsable del Tratamiento</h2>
+            <p>
+                <strong>Hacienda La Soledad</strong><br>
+                Ctra. A-8026, Km 5.800<br>
+                41500 Alcalá de Guadaíra (Sevilla)<br>
+                Email: info@haciendalasoledad.es
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">2. Finalidad del Tratamiento</h2>
+            <p>
+                Los datos personales recabados a través de los formularios de contacto serán utilizados
+                exclusivamente para gestionar las consultas y solicitudes de información sobre nuestros
+                servicios de alquiler de espacios para eventos.
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">3. Base Legal</h2>
+            <p>
+                El tratamiento de sus datos se basa en el consentimiento expreso que usted nos otorga
+                al enviar un formulario de contacto o solicitar información sobre nuestros servicios.
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">4. Derechos del Interesado</h2>
+            <p>
+                Usted tiene derecho a acceder, rectificar, suprimir, limitar el tratamiento,
+                oponerse al tratamiento y a la portabilidad de sus datos. Para ejercer estos derechos,
+                puede contactar con nosotros en info@haciendalasoledad.es.
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">5. Conservación de Datos</h2>
+            <p>
+                Los datos personales se conservarán mientras se mantenga la relación comercial
+                y durante el tiempo necesario para cumplir con las obligaciones legales aplicables.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="index.html"
+                class="inline-block px-10 py-4 border border-hacienda-black text-hacienda-black hover:bg-hacienda-black hover:text-white transition-all uppercase tracking-[0.2em] text-sm font-bold">
+                Volver al Inicio
+            </a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

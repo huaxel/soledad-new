@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda La Soledad | Monumento del Siglo XVI en Sevilla</title>
+    <meta name="description"
+        content="Hacienda La Soledad: santuario del siglo XVI para bodas, eventos corporativos y celebraciones exclusivas en Alcalá de Guadaíra, Sevilla. Sol. Silencio. Sobriedad.">
+    <meta property="og:title" content="Hacienda La Soledad | Monumento del Siglo XVI">
+    <meta property="og:description"
+        content="Santuario histórico para celebraciones que perduran. 12 espacios únicos en Sevilla.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-image.jpg">
+
+    <!-- Fonts: Cinzel for history/drama, Lato for modern readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- Alpine Layout Data injected via main.js -->
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-hacienda-black text-hacienda-white">
+
+    <!-- Navigation Container -->
+    <div id="nav-container"></div>
+
+    <!-- HERO SECTION -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <!-- Video Background (Local Asset) -->
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <video
+                class="absolute min-w-full min-h-full w-auto h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover"
+                autoplay muted loop playsinline poster="/assets/hero-fallback.jpg">
+                <source src="/assets/hero.mp4" type="video/mp4">
+            </video>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-hacienda-black"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
+            <p class="text-hacienda-gold uppercase tracking-[0.4em] text-xs md:text-sm mb-8 reveal-on-scroll"
+                x-text="t('hero_est')"></p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-9xl text-white leading-none mb-10 reveal-on-scroll drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]"
+                style="transition-delay: 200ms;">
+                <span x-text="t('hero_title1')"></span><br>
+                <span class="text-white/50" x-text="t('hero_title2')"></span><br>
+                <span class="text-hacienda-gold italic" x-text="t('hero_title3')"></span>
+            </h1>
+            <p class="text-white/80 font-light text-lg tracking-wide max-w-lg mx-auto mb-12 reveal-on-scroll drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]"
+                style="transition-delay: 400ms;" x-text="t('hero_subtitle')">
+            </p>
+
+            <a href="#legacy" class="inline-block group reveal-on-scroll cursor-pointer"
+                style="transition-delay: 600ms;">
+                <div
+                    class="h-16 w-[1px] bg-hacienda-gold mx-auto group-hover:h-24 transition-all duration-500 ease-in-out">
+                </div>
+                <span class="text-[10px] uppercase tracking-[0.3em] text-hacienda-gold mt-4 block"
+                    x-text="t('hero_cta')"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- SECTION: THE LEGACY (Broken Grid) -->
+    <section id="legacy" class="relative py-32 bg-hacienda-black overflow-hidden">
+        <!-- Watermark Typography -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden opacity-5 z-0 pointer-events-none select-none">
+            <span
+                class="text-[20rem] md:text-[30rem] font-serif font-black text-white leading-none -translate-y-1/2 block ml-[-10vw]">XVI</span>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row gap-20">
+
+                <!-- Text Block -->
+                <div class="md:w-5/12 pt-20 reveal-on-scroll">
+                    <h2 class="text-hacienda-gold text-xs uppercase tracking-[0.4em] mb-6"
+                        x-text="t('legacy_section_title')"></h2>
+                    <h3 class="text-5xl md:text-6xl font-serif text-white mb-8 leading-tight">
+                        <span x-text="t('legacy_heading_1')"></span> <br>
+                        <span class="italic text-gray-500" x-text="t('legacy_heading_2')"></span>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed font-light mb-8 text-lg" x-text="t('legacy_text_1')"></p>
+                    <p class="text-gray-500 leading-relaxed font-light mb-12" x-text="t('legacy_text_2')"></p>
+
+                    <a href="history.html"
+                        class="inline-block px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all duration-300 uppercase tracking-widest text-xs font-bold">
+                        Descubrir Historia
+                    </a>
+                </div>
+
+                <!-- Image Block (Offset) with Real Asset -->
+                <div class="md:w-7/12 relative">
+                    <div class="relative z-10 md:mt-32">
+                        <img src="/assets/gallery/almazara-main.jpg" alt="Fachada histórica de Hacienda La Soledad"
+                            class="w-full h-auto grayscale contrast-125 brightness-90 shadow-2xl hover:grayscale-0 transition-all duration-1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SPACES (Cinematic Lists) -->
+    <section id="spaces" class="py-32 bg-hacienda-dark">
+        <div class="container mx-auto px-6 mb-24 text-center reveal-on-scroll">
+            <h2 class="font-serif text-4xl md:text-6xl text-white mb-4" x-text="t('spaces_section_title')"></h2>
+            <p class="text-hacienda-gold uppercase tracking-[0.2em] text-xs" x-text="t('spaces_subtitle')"></p>
+        </div>
+
+        <!-- Space 1: Weddings (Almazara) -->
+        <div class="w-full flex flex-col md:flex-row group mb-0">
+            <div class="md:w-1/2 h-[600px] relative overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-700 z-10">
+                </div>
+                <img src="/assets/almazara.jpg"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                    alt="Interior de la Almazara con arcos del siglo XVI">
+            </div>
+            <div
+                class="md:w-1/2 bg-[#0F0F0F] p-12 md:p-24 flex flex-col justify-center border-b border-white/5 md:border-b-0 md:border-r border-white/5">
+                <span class="text-hacienda-gold text-5xl font-serif mb-4 opacity-50">01</span>
+                <h3 class="text-4xl text-white font-serif mb-6">Bodas Reales</h3>
+                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-md">
+                    Celebra tu unión en un santuario histórico. Desde la Almazara abovedada hasta los patios llenos de
+                    jazmín.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="weddings.html"
+                        class="px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-sm">
+                        Ver Bodas
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Space 2: Corporate (Gardens) -->
+        <div class="w-full flex flex-col md:flex-row-reverse group">
+            <div class="md:w-1/2 h-[600px] relative overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-700 z-10">
+                </div>
+                <img src="/assets/gallery/team-building.jpg"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                    alt="Jardines y patios históricos de la hacienda">
+            </div>
+            <div class="md:w-1/2 bg-[#0F0F0F] p-12 md:p-24 flex flex-col justify-center">
+                <span class="text-hacienda-gold text-5xl font-serif mb-4 opacity-50">02</span>
+                <h3 class="text-4xl text-white font-serif mb-6">Eventos Corporativos</h3>
+                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-md">
+                    Disconnect to reconnect. Retiros ejecutivos, presentaciones de producto y reuniones estratégicas en
+                    un entorno inspirador.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="corporate.html"
+                        class="px-8 py-3 border border-white/20 text-white hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm">
+                        Ver Empresas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-xs uppercase tracking-[0.4em] text-gray-400 mb-4">Síguenos</h2>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="inline-flex items-center gap-3 text-2xl font-serif text-gray-900 hover:text-hacienda-gold transition-colors group">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
+                    </svg>
+                    <span class="group-hover:tracking-wider transition-all">@haciendalasoledad</span>
+                </a>
+            </div>
+
+            <!-- Instagram Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/facade-exterior.jpg" alt="Fachada histórica"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/patio-arches.jpg" alt="Patio de los Arcos"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/rincon-arches.jpg" alt="Arcadas históricas"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/evening-lights.jpg" alt="Iluminación nocturna"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/wedding-patio.jpg" alt="Bodas"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/rincon-mill.jpg" alt="Molino histórico"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/wedding-ceremony.jpg" alt="Ceremonias"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/rincon-tower.jpg" alt="Torre mozárabe"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="group relative aspect-square overflow-hidden">
+                    <img src="/assets/gallery/almazara-main.jpg" alt="La Almazara"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div id="contact-container"></div>
+
+    <!-- Contact / Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Main Entry Point -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

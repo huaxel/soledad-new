@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal | Hacienda La Soledad</title>
+    <meta name="description" content="Aviso legal e información corporativa de Hacienda La Soledad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-white text-hacienda-black">
+
+    <div id="nav-container"></div>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-6 text-center bg-[#0F0F0F] text-white">
+        <h1 class="font-serif text-5xl md:text-7xl mb-6">Aviso Legal</h1>
+        <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs">Información Legal</p>
+    </header>
+
+    <!-- Content -->
+    <section class="py-24 container mx-auto px-6 max-w-3xl">
+        <div class="prose prose-lg text-gray-600 font-light leading-relaxed space-y-6">
+            <h2 class="font-serif text-2xl text-hacienda-black">1. Datos Identificativos</h2>
+            <p>
+                En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la
+                Sociedad de la Información y Comercio Electrónico, se informa:
+            </p>
+            <p>
+                <strong>Denominación:</strong> Hacienda La Soledad<br>
+                <strong>Domicilio:</strong> Ctra. A-8026, Km 5.800, 41500 Alcalá de Guadaíra (Sevilla)<br>
+                <strong>Email:</strong> info@haciendalasoledad.es<br>
+                <strong>Teléfono:</strong> +34 954 61 06 80
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">2. Propiedad Intelectual</h2>
+            <p>
+                Todos los contenidos de este sitio web, incluyendo textos, fotografías, gráficos,
+                imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente,
+                constituyen una obra cuya propiedad pertenece a Hacienda La Soledad.
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">3. Condiciones de Uso</h2>
+            <p>
+                El usuario se compromete a hacer un uso adecuado de los contenidos y servicios
+                ofrecidos a través de este sitio web y a no emplearlos para actividades ilícitas
+                o contrarias a la buena fe.
+            </p>
+
+            <h2 class="font-serif text-2xl text-hacienda-black">4. Legislación Aplicable</h2>
+            <p>
+                Para la resolución de cualquier controversia, las partes se someten a los
+                Juzgados y Tribunales de Sevilla, renunciando a cualquier otro fuero que
+                pudiera corresponderles.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="index.html"
+                class="inline-block px-10 py-4 border border-hacienda-black text-hacienda-black hover:bg-hacienda-black hover:text-white transition-all uppercase tracking-[0.2em] text-sm font-bold">
+                Volver al Inicio
+            </a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

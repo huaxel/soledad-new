@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Hacienda La Soledad</title>
+    <meta name="description"
+        content="Contacta con Hacienda La Soledad para bodas, eventos corporativos y celebraciones exclusivas en Sevilla. Monumento del siglo XVI.">
+    <meta property="og:title" content="Contacto | Hacienda La Soledad">
+    <meta property="og:description"
+        content="Santuario del siglo XVI para celebraciones que perduran. Alcalá de Guadaíra, Sevilla.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-hacienda-black text-hacienda-white">
+
+    <div id="nav-container"></div>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-6 text-center">
+        <h1 class="font-serif text-5xl md:text-7xl text-white mb-6">Contacto</h1>
+        <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs">Estamos a su disposición</p>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-16 container mx-auto px-6 max-w-5xl">
+        <div class="flex flex-col lg:flex-row gap-16">
+
+            <!-- Contact Info -->
+            <div class="lg:w-1/2 space-y-12">
+                <div class="reveal-on-scroll">
+                    <h2 class="font-serif text-2xl text-white mb-4">Información de Contacto</h2>
+                    <div class="space-y-4 text-gray-400 font-light">
+                        <p>
+                            <span class="text-hacienda-gold text-sm uppercase tracking-widest block mb-1">Directora de
+                                Eventos</span>
+                            Rocío León<br>
+                            <a href="tel:+34609746727" class="hover:text-hacienda-gold transition-colors">+34 609 74 67
+                                27</a>
+                        </p>
+                        <p>
+                            <span class="text-hacienda-gold text-sm uppercase tracking-widest block mb-1">Oficina</span>
+                            <a href="tel:+34954610680" class="hover:text-hacienda-gold transition-colors">+34 954 61 06
+                                80</a>
+                        </p>
+                        <p>
+                            <span class="text-hacienda-gold text-sm uppercase tracking-widest block mb-1">Email</span>
+                            <a href="mailto:info@haciendalasoledad.es"
+                                class="hover:text-hacienda-gold transition-colors">info@haciendalasoledad.es</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reveal-on-scroll">
+                    <h2 class="font-serif text-2xl text-white mb-4">Ubicación</h2>
+                    <p class="text-gray-400 font-light mb-4">
+                        Ctra. A-8026, de Torreblanca a Mairena del Alcor<br>
+                        Km 5.800<br>
+                        41500 Alcalá de Guadaíra (Sevilla)
+                    </p>
+                    <a href="https://maps.google.com/?q=Hacienda+La+Soledad+Alcala+de+Guadaira" target="_blank"
+                        class="text-hacienda-gold text-sm uppercase tracking-widest border-b border-hacienda-gold pb-1 hover:text-white hover:border-white transition-colors">
+                        Ver en Google Maps →
+                    </a>
+                </div>
+
+                <div class="reveal-on-scroll">
+                    <h2 class="font-serif text-2xl text-white mb-4">Síguenos</h2>
+                    <div class="flex space-x-6">
+                        <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                            class="text-gray-400 hover:text-hacienda-gold transition-colors">Instagram</a>
+                        <a href="https://www.facebook.com/haciendalasoledad" target="_blank"
+                            class="text-gray-400 hover:text-hacienda-gold transition-colors">Facebook</a>
+                        <a href="https://www.linkedin.com/company/hacienda-la-soledad" target="_blank"
+                            class="text-gray-400 hover:text-hacienda-gold transition-colors">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:w-1/2 reveal-on-scroll">
+                <h2 class="font-serif text-2xl text-white mb-6">Envíenos un mensaje</h2>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <input type="text" name="name" placeholder="Nombre *" required
+                                class="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-gray-500 focus:border-hacienda-gold focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <input type="tel" name="phone" placeholder="Teléfono"
+                                class="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-gray-500 focus:border-hacienda-gold focus:outline-none transition-colors">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email *" required
+                            class="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-gray-500 focus:border-hacienda-gold focus:outline-none transition-colors">
+                    </div>
+                    <div>
+                        <select name="event_type"
+                            class="w-full bg-transparent border-b border-white/20 py-3 text-gray-500 focus:border-hacienda-gold focus:outline-none transition-colors">
+                            <option value="">Tipo de Evento</option>
+                            <option value="boda">Boda</option>
+                            <option value="corporativo">Evento Corporativo</option>
+                            <option value="celebracion">Otra Celebración</option>
+                            <option value="visita">Visita Cultural</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" name="date" placeholder="Fecha aproximada del evento"
+                            class="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-gray-500 focus:border-hacienda-gold focus:outline-none transition-colors">
+                    </div>
+                    <div>
+                        <textarea name="message" rows="4" placeholder="Su mensaje *" required
+                            class="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-gray-500 focus:border-hacienda-gold focus:outline-none transition-colors resize-none"></textarea>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="privacy" name="privacy" required class="mt-1">
+                        <label for="privacy" class="text-xs text-gray-500">
+                            He leído y acepto la <a href="#" class="text-hacienda-gold hover:underline">política de
+                                privacidad</a>
+                        </label>
+                    </div>
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full md:w-auto px-12 py-4 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-[0.2em] text-sm font-bold">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Embed -->
+    <div class="w-full h-[400px] grayscale contrast-125 opacity-80">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.234567890!2d-5.8234567!3d37.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSGFjaWVuZGEgTGEgU29sZWRhZA!5e0!3m2!1ses!2ses!4v1234567890"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Corporativos | Hacienda La Soledad Sevilla</title>
+    <meta name="description"
+        content="Disconnect to Reconnect. Retiros ejecutivos, presentaciones de producto y eventos MICE en un Monumento Nacional del siglo XVI cerca de Sevilla.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body x-data="layout" @scroll.window="scrolled = (window.pageYOffset > 50); reveal()"
+    class="bg-hacienda-black text-hacienda-white">
+
+    <div id="nav-container"></div>
+
+    <!-- Hero -->
+    <header class="relative h-[60vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="/assets/gallery/corporate-dark.jpg" alt="Espacio corporativo en la hacienda"
+                class="w-full h-full object-cover opacity-40 grayscale contrast-125">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-hacienda-black"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 mt-20">
+            <h1 class="font-serif text-5xl md:text-7xl text-white leading-none mb-6 reveal-on-scroll">
+                Disconnect to Reconnect
+            </h1>
+            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-sm reveal-on-scroll">Retiros & Eventos
+                Corporativos</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-24 container mx-auto px-6 max-w-4xl">
+        <div class="reveal-on-scroll">
+            <h2 class="text-4xl font-serif text-white mb-8">El Aislamiento Fomenta la Concentración</h2>
+            <p class="text-gray-400 font-light text-lg leading-relaxed mb-12">
+                En un mundo de notificaciones constantes, el verdadero lujo es el silencio.
+                Hacienda La Soledad ofrece un entorno austero pero sublime donde los equipos pueden desconectar del
+                ruido
+                para reconectar con su propósito.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-16 reveal-on-scroll">
+            <div class="border border-white/10 p-8 hover:border-hacienda-gold transition-colors duration-500">
+                <h3 class="text-2xl font-serif text-hacienda-gold mb-4">Eficiencia</h3>
+                <p class="text-gray-500 font-light">
+                    Respuestas rápidas. Burocracia mínima. Entendemos que un evento corporativo no es una boda;
+                    es una inversión. Dossiers claros, planos técnicos listos, y un equipo que habla el idioma de los
+                    negocios.
+                </p>
+            </div>
+            <div class="border border-white/10 p-8 hover:border-hacienda-gold transition-colors duration-500">
+                <h3 class="text-2xl font-serif text-hacienda-gold mb-4">Carácter</h3>
+                <p class="text-gray-500 font-light">
+                    Sustituya las salas de conferencias estériles por muros del siglo XVI.
+                    Inspire a sus ejecutivos con la gravedad de la historia. La arquitectura aquí no decora; impone
+                    respeto.
+                </p>
+            </div>
+        </div>
+
+        <div class="reveal-on-scroll text-center bg-[#0F0F0F] p-12 mt-12 border border-white/5">
+            <h2 class="text-3xl font-serif text-white mb-6">Plano de la Hacienda</h2>
+            <p class="text-gray-400 font-light mb-8 max-w-2xl mx-auto">
+                Conozca la distribución exacta de nuestros 10.000m² de espacios versátiles.
+            </p>
+            <div class="relative group cursor-zoom-in overflow-hidden border border-white/10 bg-white/5">
+                <img src="/assets/hacienda-map.png" alt="Plano de distribución de espacios de la hacienda"
+                    class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                <div
+                    class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span
+                        class="bg-black/80 text-white px-4 py-2 text-xs uppercase tracking-widest border border-hacienda-gold">Ver
+                        Detalle</span>
+                </div>
+            </div>
+            <a href="/assets/hacienda-map.png" target="_blank"
+                class="inline-block mt-8 text-hacienda-gold text-xs uppercase tracking-widest border-b border-hacienda-gold pb-1 hover:text-white hover:border-white transition-colors">
+                Descargar Plano Técnico (PDF)
+            </a>
+        </div>
+
+        <div class="reveal-on-scroll text-center bg-[#0F0F0F] p-12 mt-12 border border-white/5">
+            <h2 class="text-3xl font-serif text-white mb-6">MICE & Team Building</h2>
+            <p class="text-gray-400 font-light mb-8 max-w-2xl mx-auto">
+                Desde convenciones a gran escala en nuestra Almazara hasta retiros directivos íntimos en los jardines.
+                Capacidad y versatilidad absoluta.
+            </p>
+            <a href="#contact"
+                class="inline-block px-8 py-3 bg-hacienda-gold text-black font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors">
+                Solicitar Dossier Empresas
+            </a>
+        </div>
+        <!-- TRUSTED BY SECTION -->
+        <div class="mt-24 pt-12 border-t border-white/10 reveal-on-scroll">
+            <p class="text-center text-gray-600 uppercase tracking-widest text-xs mb-10">Confían en Nosotros</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <img src="/assets/clients/atril.png" class="h-12 w-auto object-contain brightness-0 invert"
+                    alt="Logo de Atril Events">
+                <img src="/assets/clients/events4u.png" class="h-10 w-auto object-contain brightness-0 invert"
+                    alt="Logo de Events4U">
+                <img src="/assets/clients/cenarte.png" class="h-12 w-auto object-contain brightness-0 invert"
+                    alt="Logo de Cenarte">
+                <img src="/assets/clients/escultura.png" class="h-12 w-auto object-contain brightness-0 invert"
+                    alt="Logo de Escultura Eventos">
+                <img src="/assets/clients/creativando.png" class="h-8 w-auto object-contain brightness-0 invert"
+                    alt="Logo de Creativando">
+                <img src="/assets/clients/eferson.png" class="h-10 w-auto object-contain brightness-0 invert"
+                    alt="Logo de Eferson">
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
