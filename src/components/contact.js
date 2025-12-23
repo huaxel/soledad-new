@@ -101,19 +101,19 @@ export function getContactHTML() {
                             <div>
                                 <label for="contact-name" class="text-xs text-gray-500 uppercase tracking-widest mb-3 block">Nombre Completo</label>
                                 <input id="contact-name" type="text" placeholder="Tu nombre" 
-                                    class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:border-hacienda-gold focus:outline-none focus:ring-2 focus:ring-hacienda-gold/20 transition-all bg-white font-light">
+                                    class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:border-hacienda-gold focus:outline-none focus:ring-2 focus:ring-hacienda-gold/20 transition-all bg-white font-light text-gray-900 placeholder:text-gray-500">
                             </div>
                             <div>
                                 <label for="contact-email" class="text-xs text-gray-500 uppercase tracking-widest mb-3 block">Email</label>
                                 <input id="contact-email" type="email" placeholder="tu@email.com" 
-                                    class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:border-hacienda-gold focus:outline-none focus:ring-2 focus:ring-hacienda-gold/20 transition-all bg-white font-light">
+                                    class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:border-hacienda-gold focus:outline-none focus:ring-2 focus:ring-hacienda-gold/20 transition-all bg-white font-light text-gray-900 placeholder:text-gray-500">
                             </div>
                         </div>
 
                         <div>
                             <label for="contact-phone" class="text-xs text-gray-500 uppercase tracking-widest mb-3 block">Teléfono</label>
                             <input id="contact-phone" type="tel" placeholder="+34 600 000 000" 
-                                class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:border-hacienda-gold focus:outline-none focus:ring-2 focus:ring-hacienda-gold/20 transition-all bg-white font-light">
+                                class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:border-hacienda-gold focus:outline-none focus:ring-2 focus:ring-hacienda-gold/20 transition-all bg-white font-light text-gray-900 placeholder:text-gray-500">
                         </div>
 
                         <!-- Message -->

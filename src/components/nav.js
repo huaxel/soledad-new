@@ -36,7 +36,7 @@ export function getNavHTML() {
                         :class="lang === 'de' ? 'text-hacienda-gold' : 'hover:text-white'">DE</button>
                 </div>
 
-                <a href="#contact"
+                <a href="availability.html"
                     class="text-xs uppercase tracking-[0.2em] border border-hacienda-gold text-hacienda-gold px-6 py-2 hover:bg-hacienda-gold hover:text-black transition-all duration-300"
                     x-text="t('nav_inquire')">
                 </a>
@@ -81,7 +81,7 @@ export function getNavHTML() {
             <a href="corporate.html" @click="mobileMenuOpen = false"
                 class="text-3xl font-serif text-white hover:text-hacienda-gold">Corporate</a>
 
-            <a href="#contact" @click="mobileMenuOpen = false"
+            <a href="availability.html" @click="mobileMenuOpen = false"
                 class="text-xl font-serif text-hacienda-gold border border-hacienda-gold px-8 py-3 mt-4"
                 x-text="t('nav_inquire')"></a>
         </div>
