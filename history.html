@@ -28,66 +28,63 @@
     <!-- Hero -->
     <header class="relative h-[70vh] w-full overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="/assets/history.jpg"
+            <img src="/assets/history/main.jpg"
                 class="w-full h-full object-cover opacity-60 grayscale scale-105 motion-safe:animate-[subtle-zoom_20s_infinite_alternate]">
             <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-hacienda-black"></div>
         </div>
         <div class="relative z-10 text-center px-4 mt-20">
-            <h1 class="font-serif text-5xl md:text-7xl text-white leading-none mb-6 reveal-on-scroll drop-shadow-2xl">
-                Legado Andaluz
-            </h1>
-            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-sm reveal-on-scroll font-bold">Arquitectura del
-                Aceite y el Silencio</p>
+            <h1 class="font-serif text-4xl md:text-7xl text-white leading-none mb-6 reveal-on-scroll drop-shadow-2xl"
+                x-text="t('history_hero_title')"></h1>
+            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-sm reveal-on-scroll font-bold"
+                x-text="t('history_hero_subtitle')"></p>
         </div>
     </header>
 
     <!-- Key Data Grid -->
     <section class="relative z-20 -mt-16 container mx-auto px-6 max-w-6xl reveal-on-scroll">
         <div
-            class="grid grid-cols-1 md:grid-cols-4 gap-4 bg-hacienda-dark/90 text-center p-6 rounded-sm border border-hacienda-gold/20 shadow-2xl backdrop-blur-sm">
-            <div class="p-4 border-b md:border-b-0 md:border-r border-hacienda-gold/20">
-                <p class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 font-bold">Ubicación</p>
-                <p class="font-serif text-xl">Los Alcores</p>
-                <p class="text-gray-500 text-xs mt-1">Alcalá de Guadaíra</p>
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-hacienda-dark/90 text-center p-6 rounded-sm border border-hacienda-gold/20 shadow-2xl backdrop-blur-sm">
+            <div class="p-4 border-b border-r md:border-b-0 border-hacienda-gold/20">
+                <p class="text-hacienda-gold text-[10px] md:text-xs uppercase tracking-widest mb-2 font-bold"
+                    x-text="t('history_location')"></p>
+                <p class="font-serif text-lg md:text-xl">Los Alcores</p>
+                <p class="text-gray-500 text-[10px] mt-1">Alcalá de Guadaíra</p>
             </div>
             <div class="p-4 border-b md:border-b-0 md:border-r border-hacienda-gold/20">
-                <p class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 font-bold">Fundación</p>
-                <p class="font-serif text-xl">1542</p>
-                <p class="text-gray-500 text-xs mt-1">Familia Espinosa</p>
+                <p class="text-hacienda-gold text-[10px] md:text-xs uppercase tracking-widest mb-2 font-bold"
+                    x-text="t('history_foundation')"></p>
+                <p class="font-serif text-lg md:text-xl">1542</p>
+                <p class="text-gray-500 text-[10px] mt-1">Familia Espinosa</p>
             </div>
-            <div class="p-4 border-b md:border-b-0 md:border-r border-hacienda-gold/20">
-                <p class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 font-bold">Apogeo</p>
-                <p class="font-serif text-xl">Siglo XVIII</p>
-                <p class="text-gray-500 text-xs mt-1">Barroco Sevillano</p>
+            <div class="p-4 border-r md:border-r border-hacienda-gold/20">
+                <p class="text-hacienda-gold text-[10px] md:text-xs uppercase tracking-widest mb-2 font-bold"
+                    x-text="t('history_apex')"></p>
+                <p class="font-serif text-lg md:text-xl">Siglo XVIII</p>
+                <p class="text-gray-500 text-[10px] mt-1">Barroco Sevillano</p>
             </div>
             <div class="p-4">
-                <p class="text-hacienda-gold text-xs uppercase tracking-widest mb-2 font-bold">Estatuto</p>
-                <p class="font-serif text-xl">BIC</p>
-                <p class="text-gray-500 text-xs mt-1">Bien de Interés Cultural</p>
+                <p class="text-hacienda-gold text-[10px] md:text-xs uppercase tracking-widest mb-2 font-bold"
+                    x-text="t('history_status')"></p>
+                <p class="font-serif text-lg md:text-xl">BIC</p>
+                <p class="text-gray-500 text-[10px] mt-1" x-text="t('history_bic')"></p>
             </div>
         </div>
     </section>
 
     <!-- Intro Narrative -->
-    <section class="py-24 container mx-auto px-6 max-w-3xl text-center reveal-on-scroll">
+    <section class="py-16 md:py-24 container mx-auto px-6 max-w-3xl text-center reveal-on-scroll">
         <span class="text-hacienda-gold text-4xl block mb-6">❦</span>
-        <h2 class="text-3xl md:text-4xl font-serif text-white mb-8 leading-tight">Palimpsesto Socio-Económico</h2>
-        <p class="text-gray-400 font-light text-lg leading-relaxed mb-6">
-            Más que una simple construcción, la Hacienda de la Soledad es una sección transversal de la historia
-            andaluza.
-            Desde sus orígenes como una poderosa heredad de banqueros en la Carrera de Indias, pasando por su
-            monumentalización barroca, hasta su renacimiento contemporáneo.
-        </p>
-        <p class="text-gray-500 font-light leading-relaxed">
-            Aquí, los flujos globales del comercio de jabón y aceite se cruzaron con las tradiciones locales,
-            creando una "fábrica de campo" que también sirvió como palacio de recreo y fortaleza espiritual.
-        </p>
+        <h2 class="text-3xl md:text-4xl font-serif text-white mb-8 leading-tight" x-text="t('history_intro_title')">
+        </h2>
+        <p class="text-gray-400 font-light text-lg leading-relaxed mb-6" x-text="t('history_intro_text')"></p>
+        <p class="text-gray-500 font-light leading-relaxed" x-text="t('history_intro_text_2')"></p>
     </section>
 
     <!-- Timeline Section -->
     <section class="py-12 bg-black/30">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-serif text-white mb-16 text-center reveal-on-scroll">Crónica Secular</h2>
+            <h2 class="text-3xl font-serif text-white mb-16 text-center reveal-on-scroll"
+                x-text="t('history_timeline_title')"></h2>
 
             <div class="relative border-l border-hacienda-gold/30 ml-4 md:ml-1/2 space-y-24 pl-8 md:pl-0">
 
@@ -96,7 +93,7 @@
                     <div class="md:w-5/12 text-right pr-12 hidden md:block">
                         <span
                             class="text-hacienda-gold text-5xl font-serif opacity-40 group-hover:opacity-100 transition-opacity">1542</span>
-                        <h4 class="text-white text-lg font-bold mt-2">La Dinastía Espinosa</h4>
+                        <h4 class="text-white text-lg font-bold mt-2" x-text="t('history_timeline_1_title')"></h4>
                     </div>
                     <!-- Dot -->
                     <div
@@ -105,14 +102,12 @@
 
                     <div class="md:w-5/12 pl-0 md:pl-12">
                         <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2">1542</span>
-                        <h3 class="text-xl font-serif text-white mb-3 md:hidden">Fundación</h3>
-                        <img src="/assets/gallery/facade-exterior.jpg" alt="Fachada histórica"
+                        <h3 class="text-xl font-serif text-white mb-3 md:hidden" x-text="t('history_timeline_1_title')">
+                        </h3>
+                        <img src="/assets/history/facade.jpg" alt="Fachada histórica"
                             class="w-full h-48 object-cover grayscale mb-4 rounded-sm opacity-80">
-                        <p class="text-gray-400 font-light text-sm leading-relaxed">
-                            Rodrigo de Espinosa, banquero de Carlos V, compra la finca. Su familia controlará el
-                            comercio de aceite y jabón desde Sevilla hacia las Indias. La hacienda nace como un
-                            nodo en la red global del Imperio.
-                        </p>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed"
+                            x-text="t('history_timeline_1_desc')"></p>
                     </div>
                 </div>
 
@@ -120,14 +115,12 @@
                 <div class="reveal-on-scroll md:flex md:items-center justify-between group relative">
                     <div class="md:w-5/12 text-right pr-0 md:pr-12 order-last md:order-first">
                         <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2">1600</span>
-                        <h3 class="text-xl font-serif text-white mb-3 md:hidden">Apogeo Comercial</h3>
-                        <img src="/assets/gallery/almazara-interior.jpg" alt="Interior de la almazara"
+                        <h3 class="text-xl font-serif text-white mb-3 md:hidden" x-text="t('history_timeline_2_title')">
+                        </h3>
+                        <img src="/assets/history/molino.jpg" alt="Interior de la almazara"
                             class="w-full h-48 object-cover grayscale mb-4 rounded-sm opacity-80">
-                        <p class="text-gray-400 font-light text-sm leading-relaxed text-left md:text-right">
-                            Bajo Alonso de Ayala, la hacienda alcanza su máximo productivo. Se exportan miles de
-                            arrobas de aceite a Flandes y América. La riqueza permite la construcción de la
-                            capilla privada y la ampliación de la almazara.
-                        </p>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed text-left md:text-right"
+                            x-text="t('history_timeline_2_desc')"></p>
                     </div>
                     <div
                         class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] w-2.5 h-2.5 bg-hacienda-gold rounded-full ring-4 ring-black">
@@ -135,7 +128,7 @@
                     <div class="md:w-5/12 pl-12 hidden md:block">
                         <span
                             class="text-hacienda-gold text-5xl font-serif opacity-40 group-hover:opacity-100 transition-opacity">1600</span>
-                        <h4 class="text-white text-lg font-bold mt-2">Apogeo Comercial</h4>
+                        <h4 class="text-white text-lg font-bold mt-2" x-text="t('history_timeline_2_title')"></h4>
                     </div>
                 </div>
 
@@ -143,12 +136,10 @@
                 <div class="reveal-on-scroll md:flex md:items-center justify-between group relative">
                     <div class="md:w-5/12 text-right pr-0 md:pr-12 order-last md:order-first">
                         <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2">1699</span>
-                        <h3 class="text-xl font-serif text-white mb-3 md:hidden">La Gran Reconstrucción</h3>
-                        <p class="text-gray-400 font-light text-sm leading-relaxed text-left md:text-right">
-                            Don Adrián Delgado Ayala, Caballero de Santiago, reconstruye el cortijo "desde sus
-                            cimientos". Nace la traza barroca actual y se rebautiza como "Soledad La Nueva", vinculando
-                            la finca a la devoción mariana.
-                        </p>
+                        <h3 class="text-xl font-serif text-white mb-3 md:hidden" x-text="t('history_timeline_3_title')">
+                        </h3>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed text-left md:text-right"
+                            x-text="t('history_timeline_3_desc')"></p>
                     </div>
                     <div
                         class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] w-2.5 h-2.5 bg-hacienda-gold rounded-full ring-4 ring-black">
@@ -156,7 +147,7 @@
                     <div class="md:w-5/12 pl-12 hidden md:block">
                         <span
                             class="text-hacienda-gold text-5xl font-serif opacity-40 group-hover:opacity-100 transition-opacity">1699</span>
-                        <h4 class="text-white text-lg font-bold mt-2">Delgado Ayala</h4>
+                        <h4 class="text-white text-lg font-bold mt-2" x-text="t('history_timeline_3_title')"></h4>
                     </div>
                 </div>
 
@@ -165,7 +156,7 @@
                     <div class="md:w-5/12 text-right pr-12 hidden md:block">
                         <span
                             class="text-hacienda-gold text-5xl font-serif opacity-40 group-hover:opacity-100 transition-opacity">1701</span>
-                        <h4 class="text-white text-lg font-bold mt-2">Guerra y Ruina</h4>
+                        <h4 class="text-white text-lg font-bold mt-2" x-text="t('history_timeline_4_title')"></h4>
                     </div>
                     <div
                         class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] w-2.5 h-2.5 bg-red-900 rounded-full ring-4 ring-black">
@@ -173,11 +164,10 @@
 
                     <div class="md:w-5/12 pl-0 md:pl-12">
                         <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2">1701</span>
-                        <h3 class="text-xl font-serif text-white mb-3 md:hidden">Guerra de Sucesión</h3>
-                        <p class="text-gray-400 font-light text-sm leading-relaxed">
-                            El bloqueo naval inglés de Cádiz corta las rutas atlánticas. Sin poder exportar aceite y
-                            jabón, Ayala quiebra. Un recordatorio brutal de la conexión global de la hacienda.
-                        </p>
+                        <h3 class="text-xl font-serif text-white mb-3 md:hidden" x-text="t('history_timeline_4_title')">
+                        </h3>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed"
+                            x-text="t('history_timeline_4_desc')"></p>
                     </div>
                 </div>
 
@@ -185,14 +175,12 @@
                 <div class="reveal-on-scroll md:flex md:items-center justify-between group relative">
                     <div class="md:w-5/12 text-right pr-0 md:pr-12 order-last md:order-first">
                         <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2">1737</span>
-                        <h3 class="text-xl font-serif text-white mb-3 md:hidden">La Edad de Oro</h3>
-                        <img src="/assets/gallery/patio-arches.jpg" alt="Patio de los Arcos"
+                        <h3 class="text-xl font-serif text-white mb-3 md:hidden" x-text="t('history_timeline_5_title')">
+                        </h3>
+                        <img src="/assets/history/frescos.jpg" alt="Patio de los Arcos"
                             class="w-full h-48 object-cover grayscale mb-4 rounded-sm opacity-80">
-                        <p class="text-gray-400 font-light text-sm leading-relaxed text-left md:text-right">
-                            La familia Gómez de Barreda adquiere la finca y establece un Mayorazgo (1740), asegurando su
-                            estabilidad por siglos. Se añaden el Jardín de Crucero y los frescos de caballos en las
-                            cuadras, refinando el carácter señorial.
-                        </p>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed text-left md:text-right"
+                            x-text="t('history_timeline_5_desc')"></p>
                     </div>
                     <div
                         class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] w-2.5 h-2.5 bg-hacienda-gold rounded-full ring-4 ring-black">
@@ -215,13 +203,12 @@
                         class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] w-2.5 h-2.5 bg-hacienda-gold rounded-full ring-4 ring-black">
                     </div>
                     <div class="md:w-5/12 pl-0 md:pl-12">
-                        <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2">S.XXI</span>
-                        <h3 class="text-xl font-serif text-white mb-3 md:hidden">Renacimiento</h3>
-                        <p class="text-gray-400 font-light text-sm leading-relaxed">
-                            Bajo la custodia de los hermanos Maestre Benjumea, se eliminan capas modernas de cal para
-                            revelar los esgrafiados originales. La hacienda transiciona de la producción agrícola a la
-                            "economía de la experiencia".
-                        </p>
+                        <span class="text-hacienda-gold text-4xl font-serif block md:hidden mb-2"
+                            x-text="t('history_timeline_modern')"></span>
+                        <h3 class="text-xl font-serif text-white mb-3 md:hidden" x-text="t('history_timeline_rebirth')">
+                        </h3>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed"
+                            x-text="t('history_timeline_rebirth_desc')"></p>
                     </div>
                 </div>
 
@@ -233,9 +220,8 @@
     <section class="py-24 bg-hacienda-dark border-t border-hacienda-gold/10" x-data="{ activeArch: 'almazara' }">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-16 reveal-on-scroll">
-                <h2 class="text-3xl font-serif text-white mb-4">Anatomía de una Hacienda</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto">La fusión perfecta entre fortaleza industrial y palacio
-                    residencial.</p>
+                <h2 class="text-3xl font-serif text-white mb-4" x-text="t('history_anatomy_title')"></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto" x-text="t('history_anatomy_subtitle')"></p>
             </div>
 
             <div class="flex flex-col lg:flex-row gap-12">
@@ -244,25 +230,25 @@
                     <button @click="activeArch = 'almazara'"
                         :class="activeArch === 'almazara' ? 'border-hacienda-gold text-white bg-hacienda-gold/10' : 'border-transparent text-gray-500 hover:text-gray-300'"
                         class="w-full text-left px-6 py-4 border-l-2 transition-all duration-300 flex justify-between items-center group">
-                        <span class="font-serif">La Almazara</span>
+                        <span class="font-serif" x-text="t('history_arch_almazara')"></span>
                         <span class="opacity-0 group-hover:opacity-100 text-hacienda-gold">→</span>
                     </button>
                     <button @click="activeArch = 'torre'"
                         :class="activeArch === 'torre' ? 'border-hacienda-gold text-white bg-hacienda-gold/10' : 'border-transparent text-gray-500 hover:text-gray-300'"
                         class="w-full text-left px-6 py-4 border-l-2 transition-all duration-300 flex justify-between items-center group">
-                        <span class="font-serif">Torre de Contrapeso</span>
+                        <span class="font-serif" x-text="t('history_arch_tower')"></span>
                         <span class="opacity-0 group-hover:opacity-100 text-hacienda-gold">→</span>
                     </button>
                     <button @click="activeArch = 'patios'"
                         :class="activeArch === 'patios' ? 'border-hacienda-gold text-white bg-hacienda-gold/10' : 'border-transparent text-gray-500 hover:text-gray-300'"
                         class="w-full text-left px-6 py-4 border-l-2 transition-all duration-300 flex justify-between items-center group">
-                        <span class="font-serif">Sistema de Patios</span>
+                        <span class="font-serif" x-text="t('history_arch_patios')"></span>
                         <span class="opacity-0 group-hover:opacity-100 text-hacienda-gold">→</span>
                     </button>
                     <button @click="activeArch = 'capilla'"
                         :class="activeArch === 'capilla' ? 'border-hacienda-gold text-white bg-hacienda-gold/10' : 'border-transparent text-gray-500 hover:text-gray-300'"
                         class="w-full text-left px-6 py-4 border-l-2 transition-all duration-300 flex justify-between items-center group">
-                        <span class="font-serif">La Capilla</span>
+                        <span class="font-serif" x-text="t('history_arch_capilla')"></span>
                         <span class="opacity-0 group-hover:opacity-100 text-hacienda-gold">→</span>
                     </button>
                 </div>
@@ -278,11 +264,9 @@
                         <img src="/assets/almazara.jpg" class="w-full h-full object-cover opacity-40 grayscale">
                         <div
                             class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/90 to-transparent">
-                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3">La Fabrica de Oro Líquido</h3>
-                            <p class="text-gray-300 leading-relaxed text-sm mb-4">
-                                Esta inmensa nave albergaba la "viga de husillo", un leviatán de madera de 15 metros.
-                                Aquí, el ruido de las bestias y el olor a alpechín dominaban, creando el aceite que
-                                iluminaría iglesias y hogares.
+                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3"
+                                x-text="t('history_almazara_title')"></h3>
+                            <p class="text-gray-300 leading-relaxed text-sm mb-4" x-text="t('history_almazara_desc')">
                             </p>
                             <ul class="flex flex-wrap gap-3 text-xs text-gray-400 uppercase tracking-wider">
                                 <li class="border border-gray-700 px-3 py-1 rounded-full">Viga de 15m</li>
@@ -308,12 +292,9 @@
                         </div>
                         <div
                             class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/90 to-transparent">
-                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3">Torre de Contrapeso</h3>
-                            <p class="text-gray-300 leading-relaxed text-sm">
-                                Los "rascacielos" del campo andaluz. No es defensiva ni religiosa; es pura física. Su
-                                enorme masa de sillería y ladrillo servía para anclar el contrapeso que levantaba la
-                                gigantesca viga de la prensa.
-                            </p>
+                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3" x-text="t('history_tower_title')">
+                            </h3>
+                            <p class="text-gray-300 leading-relaxed text-sm" x-text="t('history_tower_desc')"></p>
                         </div>
                     </div>
 
@@ -339,12 +320,9 @@
                             </div>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-8 bg-black/80 backdrop-blur-sm">
-                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3">Segregación Espacial</h3>
-                            <p class="text-gray-300 leading-relaxed text-sm">
-                                La arquitectura impone orden social. El Patio de Labor (2000 m²) bulle de actividad,
-                                mientras el Patio del Señorío permanece como un claustro introvertido de arcadas y
-                                sombras frescas.
-                            </p>
+                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3" x-text="t('history_patios_title')">
+                            </h3>
+                            <p class="text-gray-300 leading-relaxed text-sm" x-text="t('history_patios_desc')"></p>
                         </div>
                     </div>
 
@@ -361,11 +339,9 @@
                         </div>
                         <div
                             class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/90 to-transparent">
-                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3">Oratorio Privado</h3>
-                            <p class="text-gray-300 leading-relaxed text-sm">
-                                Con su retablo de estípites y azulejos marianos, la capilla legitimaba la piedad de los
-                                dueños y servía para imponer el ciclo litúrgico sobre el agrario.
-                            </p>
+                            <h3 class="text-2xl font-serif text-hacienda-gold mb-3" x-text="t('history_capilla_title')">
+                            </h3>
+                            <p class="text-gray-300 leading-relaxed text-sm" x-text="t('history_capilla_desc')"></p>
                         </div>
                     </div>
 
@@ -381,77 +357,69 @@
 
                 <!-- Col 1: Economy Chart -->
                 <div class="reveal-on-scroll">
-                    <h3 class="text-2xl font-serif text-white mb-6 flex items-center gap-3">
-                        Economía del Aceite
-                    </h3>
+                    <h3 class="text-2xl font-serif text-white mb-6 flex items-center gap-3"
+                        x-text="t('history_economy_title')"></h3>
 
                     <div class="mb-6 flex space-x-4 text-sm">
                         <button @click="setMode('production')"
                             :class="mode === 'production' ? 'text-hacienda-gold border-b border-hacienda-gold' : 'text-gray-600 hover:text-white'"
-                            class="pb-1 transition-colors uppercase tracking-wider font-bold">Producción
-                            S.XVIII</button>
+                            class="pb-1 transition-colors uppercase tracking-wider font-bold"
+                            x-text="t('history_production_mode')"></button>
                         <button @click="setMode('labor')"
                             :class="mode === 'labor' ? 'text-hacienda-gold border-b border-hacienda-gold' : 'text-gray-600 hover:text-white'"
-                            class="pb-1 transition-colors uppercase tracking-wider font-bold">Ciclo Laboral</button>
+                            class="pb-1 transition-colors uppercase tracking-wider font-bold"
+                            x-text="t('history_labor_mode')"></button>
                     </div>
 
                     <div class="bg-hacienda-dark border border-hacienda-gold/10 p-4 rounded-sm h-[300px] relative">
                         <canvas id="oilChart"></canvas>
                     </div>
-                    <p class="text-xs text-gray-500 mt-4 italic">
-                        *Datos históricos estimados basados en registros de haciendas de Los Alcores. El siglo XVIII
-                        marcó el pico de exportación a las Américas.
-                    </p>
+                    <p class="text-xs text-gray-500 mt-4 italic" x-text="t('history_chart_note')"></p>
                 </div>
 
                 <!-- Col 2: Social Stratification -->
                 <div class="reveal-on-scroll">
-                    <h3 class="text-2xl font-serif text-white mb-6 flex items-center gap-3">
-                        Estratificación Social
-                    </h3>
+                    <h3 class="text-2xl font-serif text-white mb-6 flex items-center gap-3"
+                        x-text="t('history_social_title')"></h3>
                     <div class="space-y-4">
 
                         <!-- Card 1 -->
                         <div
-                            class="group p-5 border border-hacienda-gold/10 hover:border-hacienda-gold/40 transition-all bg-hacienda-dark/50 hover:bg-hacienda-dark">
+                            class="group p-5 border border-white/10 hover:border-hacienda-gold transition-all bg-hacienda-dark/50 hover:bg-hacienda-dark">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="font-serif text-lg text-white">El Señorío</h4>
+                                <h4 class="font-serif text-lg text-white" x-text="t('history_lordship')"></h4>
                                 <span
-                                    class="text-xs uppercase text-hacienda-gold border border-hacienda-gold px-2 py-0.5 rounded-full">Aristocracia</span>
+                                    class="text-[10px] uppercase text-hacienda-gold border border-hacienda-gold px-2 py-0.5 rounded-full"
+                                    x-text="t('history_lordship_rank')"></span>
                             </div>
-                            <p class="text-sm text-gray-400 font-light group-hover:text-gray-300">
-                                Propietarios absentistas residiendo en Sevilla. La hacienda era su símbolo de estatus
-                                ("limpiar dinero comercial") y retiro estival.
-                            </p>
+                            <p class="text-sm text-gray-400 font-light group-hover:text-gray-300"
+                                x-text="t('history_lordship_desc')"></p>
                         </div>
 
                         <!-- Card 2 -->
                         <div
-                            class="group p-5 border border-hacienda-gold/10 hover:border-hacienda-gold/40 transition-all bg-hacienda-dark/50 hover:bg-hacienda-dark">
+                            class="group p-5 border border-white/10 hover:border-hacienda-gold transition-all bg-hacienda-dark/50 hover:bg-hacienda-dark">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="font-serif text-lg text-white">El Casero</h4>
+                                <h4 class="font-serif text-lg text-white" x-text="t('history_housekeeper')"></h4>
                                 <span
-                                    class="text-xs uppercase text-blue-300 border border-blue-300/30 px-2 py-0.5 rounded-full">Gestión</span>
+                                    class="text-[10px] uppercase text-blue-300 border border-blue-300/30 px-2 py-0.5 rounded-full"
+                                    x-text="t('history_housekeeper_rank')"></span>
                             </div>
-                            <p class="text-sm text-gray-400 font-light group-hover:text-gray-300">
-                                La autoridad presente. Guardián de las llaves del granero y el molino. Intermediario
-                                crucial entre la nobleza y el proletariado rural.
-                            </p>
+                            <p class="text-sm text-gray-400 font-light group-hover:text-gray-300"
+                                x-text="t('history_housekeeper_desc')"></p>
                         </div>
 
                         <!-- Card 3 -->
                         <div
-                            class="group p-5 border border-hacienda-gold/10 hover:border-hacienda-gold/40 transition-all bg-hacienda-dark/50 hover:bg-hacienda-dark">
+                            class="group p-5 border border-white/10 hover:border-hacienda-gold transition-all bg-hacienda-dark/50 hover:bg-hacienda-dark">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="font-serif text-lg text-white">La Gañanía</h4>
+                                <h4 class="font-serif text-lg text-white" x-text="t('history_laborers')"></h4>
                                 <span
-                                    class="text-xs uppercase text-gray-500 border border-gray-500 px-2 py-0.5 rounded-full">Mano
-                                    de Obra</span>
+                                    class="text-[10px] uppercase text-gray-500 border border-gray-500 px-2 py-0.5 rounded-full"
+                                    x-text="t('history_laborers_rank')"></span>
                             </div>
-                            <p class="text-sm text-gray-400 font-light group-hover:text-gray-300">
-                                Aceituneros estacionales y pastores viviendo en dormitorios comunales junto al ganado.
-                                Una vida dura marcada por la campana de la hacienda.
-                            </p>
+                            <p class="text-sm text-gray-400 font-light group-hover:text-gray-300"
+                                x-text="t('history_laborers_desc')"></p>
                         </div>
 
                     </div>

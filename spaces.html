@@ -24,17 +24,18 @@
 
     <!-- Header -->
     <header class="pt-40 pb-20 px-6 text-center bg-[#0F0F0F] text-white">
-        <h1 class="font-serif text-5xl md:text-7xl mb-6">Nuestros Espacios</h1>
-        <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs">12 Escenarios. 500 Años de Historia.</p>
+        <h1 class="font-serif text-5xl md:text-7xl mb-6" x-text="t('nav_spaces')"></h1>
+        <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs"
+            x-text="'12 ' + t('nav_spaces') + '. 500 ' + t('nav_legend')"></p>
     </header>
 
     <!-- Main Catalog Grid -->
-    <section class="py-24 container mx-auto px-6 max-w-6xl space-y-24">
+    <section class="py-16 md:py-32 container mx-auto px-6 max-w-6xl space-y-24">
 
         <!-- INDOOR SPACES -->
         <div class="text-center mb-16">
-            <h2 class="font-serif text-3xl text-hacienda-black mb-2">Espacios Interiores</h2>
-            <p class="text-gray-500 text-sm">Climatizados. Techos históricos. Atmósfera inigualable.</p>
+            <h2 class="font-serif text-3xl text-hacienda-black mb-2" x-text="t('spaces_indoor_title')"></h2>
+            <p class="text-gray-500 text-sm" x-text="t('label_indoor_desc')"></p>
         </div>
 
         <!-- Space: Lagar -->
@@ -50,10 +51,14 @@
                 <p class="text-sm font-bold uppercase tracking-widest text-hacienda-black mb-4">El motor del siglo XVI
                 </p>
                 <div class="flex flex-wrap gap-4 text-xs text-gray-600 mb-6">
-                    <span class="bg-gray-100 px-3 py-1">Cóctel: <strong>550</strong></span>
-                    <span class="bg-gray-100 px-3 py-1">Banquete: <strong>450</strong></span>
-                    <span class="bg-gray-100 px-3 py-1">Área: <strong>550 m²</strong></span>
-                    <span class="bg-gray-100 px-3 py-1">Altura: <strong>5m</strong></span>
+                    <span class="bg-gray-100 px-3 py-1"><span x-text="t('label_cocktail')"></span>:
+                        <strong>550</strong></span>
+                    <span class="bg-gray-100 px-3 py-1"><span x-text="t('label_banquet')"></span>:
+                        <strong>450</strong></span>
+                    <span class="bg-gray-100 px-3 py-1"><span x-text="t('label_area')"></span>: <strong>550
+                            m²</strong></span>
+                    <span class="bg-gray-100 px-3 py-1"><span x-text="t('label_height')"></span>:
+                        <strong>5m</strong></span>
                 </div>
                 <p class="font-light text-gray-500 leading-relaxed text-sm">
                     Instalación con arcada de piedra y techos con acabados en madera y ventanas. Aquí se prensaba la
@@ -163,8 +168,8 @@
 
         <!-- DIVIDER: OUTDOOR SPACES -->
         <div class="text-center py-16 border-t border-gray-200">
-            <h2 class="font-serif text-3xl text-hacienda-black mb-2">Patios y Jardines</h2>
-            <p class="text-gray-500 text-sm">Albero. Piedra. Cielo abierto.</p>
+            <h2 class="font-serif text-3xl text-hacienda-black mb-2" x-text="t('spaces_outdoor_title')"></h2>
+            <p class="text-gray-500 text-sm" x-text="t('label_outdoor_desc')"></p>
         </div>
 
         <!-- Space: Patio de Labor -->
@@ -337,9 +342,9 @@
     </section>
 
     <!-- Technical Notes -->
-    <div class="bg-[#0F0F0F] text-white py-20 px-6">
+    <div class="bg-[#0F0F0F] text-white py-16 md:py-32 px-6">
         <div class="container mx-auto max-w-4xl">
-            <h3 class="font-serif text-3xl text-center mb-12">Especificaciones Técnicas</h3>
+            <h3 class="font-serif text-3xl text-center mb-12" x-text="t('spaces_tech_title')"></h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-gray-400">
                 <ul class="space-y-3">
                     <li>✓ Todos los espacios cubiertos climatizados.</li>
@@ -358,8 +363,8 @@
             </div>
             <div class="text-center mt-12">
                 <a href="/assets/hacienda-map.png" target="_blank"
-                    class="inline-block px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-xs font-bold">
-                    Descargar Dossier Técnico
+                    class="inline-block px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-xs font-bold"
+                    x-text="t('spaces_tech_dossier')">
                 </a>
             </div>
         </div>

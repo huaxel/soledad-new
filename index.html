@@ -66,7 +66,7 @@
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
             <p class="text-hacienda-gold uppercase tracking-[0.4em] text-xs md:text-sm mb-8 reveal-on-scroll"
                 x-text="t('hero_est')"></p>
-            <h1 class="font-serif text-5xl md:text-7xl lg:text-9xl text-white leading-none mb-10 reveal-on-scroll drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]"
+            <h1 class="font-serif text-4xl md:text-7xl lg:text-9xl text-white leading-none mb-10 reveal-on-scroll drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]"
                 style="transition-delay: 200ms;">
                 <span x-text="t('hero_title1')"></span><br>
                 <span class="text-white/50" x-text="t('hero_title2')"></span><br>
@@ -88,7 +88,7 @@
     </header>
 
     <!-- SECTION: THE LEGACY (Broken Grid) -->
-    <section id="legacy" class="relative py-32 bg-hacienda-black overflow-hidden">
+    <section id="legacy" class="relative py-16 md:py-32 bg-hacienda-black overflow-hidden">
         <!-- Watermark Typography -->
         <div class="absolute top-0 left-0 w-full overflow-hidden opacity-[0.03] z-0 pointer-events-none select-none">
             <span
@@ -102,7 +102,7 @@
                 <div class="md:w-5/12 pt-20 reveal-on-scroll">
                     <h2 class="text-hacienda-gold text-xs uppercase tracking-[0.4em] mb-6"
                         x-text="t('legacy_section_title')"></h2>
-                    <h3 class="text-5xl md:text-6xl font-serif text-white mb-8 leading-tight">
+                    <h3 class="text-4xl md:text-6xl font-serif text-white mb-8 leading-tight">
                         <span x-text="t('legacy_heading_1')"></span> <br>
                         <span class="italic text-gray-500" x-text="t('legacy_heading_2')"></span>
                     </h3>
@@ -110,8 +110,8 @@
                     <p class="text-gray-500 leading-relaxed font-light mb-12" x-text="t('legacy_text_2')"></p>
 
                     <a href="history.html"
-                        class="inline-block px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all duration-300 uppercase tracking-widest text-xs font-bold">
-                        Descubrir Historia
+                        class="inline-block px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all duration-300 uppercase tracking-widest text-xs font-bold"
+                        x-text="t('nav_discover_history')">
                     </a>
                 </div>
 
@@ -127,19 +127,16 @@
     </section>
 
     <!-- Bridge Text: Two Worlds, One Roof -->
-    <section class="py-20 bg-hacienda-black text-center">
+    <section class="py-16 md:py-20 bg-hacienda-black text-center">
         <div class="container mx-auto px-6">
-            <p class="font-serif text-3xl md:text-4xl text-white/80 italic">
-                Dos mundos, un mismo techo.
-            </p>
-            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs mt-4">
-                Intimidad para pocos. Grandeza para muchos.
+            <p class="font-serif text-3xl md:text-4xl text-white/80 italic" x-text="t('index_bridge_title')"></p>
+            <p class="text-hacienda-gold uppercase tracking-[0.3em] text-xs mt-4" x-text="t('index_bridge_subtitle')">
             </p>
         </div>
     </section>
 
     <!-- SECTION: SPACES (Cinematic Lists) -->
-    <section id="spaces" class="py-32 bg-hacienda-dark">
+    <section id="spaces" class="relative py-16 md:py-32 bg-hacienda-dark">
         <div class="container mx-auto px-6 mb-24 text-center reveal-on-scroll">
             <h2 class="font-serif text-4xl md:text-6xl text-white mb-4" x-text="t('spaces_section_title')"></h2>
             <p class="text-hacienda-gold uppercase tracking-[0.2em] text-xs" x-text="t('spaces_subtitle')"></p>
@@ -147,7 +144,7 @@
 
         <!-- Space 1: Weddings (Almazara) -->
         <div class="w-full flex flex-col md:flex-row group mb-0">
-            <div class="md:w-1/2 h-[600px] relative overflow-hidden">
+            <div class="md:w-1/2 h-[400px] md:h-[600px] relative overflow-hidden">
                 <div
                     class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-700 z-10">
                 </div>
@@ -158,15 +155,12 @@
             <div
                 class="md:w-1/2 bg-[#0F0F0F] p-12 md:p-24 flex flex-col justify-center border-b border-white/5 md:border-b-0 md:border-r border-white/5">
                 <span class="text-hacienda-gold text-5xl font-serif mb-4 opacity-50">01</span>
-                <h3 class="text-4xl text-white font-serif mb-6">Bodas Reales</h3>
-                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-md">
-                    Celebra tu unión en un santuario histórico. Desde la Almazara abovedada hasta los patios llenos de
-                    jazmín.
-                </p>
+                <h3 class="text-4xl text-white font-serif mb-6" x-text="t('index_weddings_title')"></h3>
+                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-md" x-text="t('index_weddings_text')"></p>
                 <div class="flex items-center gap-6">
                     <a href="weddings.html"
-                        class="px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-sm">
-                        Ver Bodas
+                        class="px-8 py-3 border border-hacienda-gold text-hacienda-gold hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-sm"
+                        x-text="t('index_weddings_cta')">
                     </a>
                 </div>
             </div>
@@ -175,7 +169,7 @@
 
         <!-- Space 2: Corporate (Gardens) -->
         <div class="w-full flex flex-col md:flex-row-reverse group">
-            <div class="md:w-1/2 h-[600px] relative overflow-hidden">
+            <div class="md:w-1/2 h-[400px] md:h-[600px] relative overflow-hidden">
                 <div
                     class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-700 z-10">
                 </div>
@@ -185,30 +179,28 @@
             </div>
             <div class="md:w-1/2 bg-[#0F0F0F] p-12 md:p-24 flex flex-col justify-center">
                 <span class="text-hacienda-gold text-5xl font-serif mb-4 opacity-50">02</span>
-                <h3 class="text-4xl text-white font-serif mb-6">Eventos Corporativos</h3>
-                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-md">
-                    Disconnect to reconnect. Retiros ejecutivos, presentaciones de producto y reuniones estratégicas en
-                    un entorno inspirador.
+                <h3 class="text-4xl text-white font-serif mb-6" x-text="t('index_corporate_title')"></h3>
+                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-md" x-text="t('index_corporate_text')">
                 </p>
                 <div class="flex items-center gap-6">
                     <a href="corporate.html"
-                        class="px-8 py-3 border border-white/20 text-white hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm">
-                        Ver Empresas
+                        class="px-8 py-3 border border-white/20 text-white hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm"
+                        x-text="t('index_corporate_cta')">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Instagram Gallery Section - Live Feed -->
-    <section class="py-20 bg-white">
+    <!-- Instagram Gallery Section - Live Feed Placeholder -->
+    <section class="py-24 bg-white">
         <div class="container mx-auto px-6">
             <!-- Section Header -->
-            <div class="text-center mb-12">
-                <h2 class="text-xs uppercase tracking-[0.4em] text-gray-400 mb-4">Síguenos</h2>
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-[0.4em] text-gray-400 mb-4" x-text="t('index_follow_us')"></h2>
                 <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
-                    class="inline-flex items-center gap-3 text-2xl font-serif text-gray-900 hover:text-hacienda-gold transition-colors group">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    class="inline-flex items-center gap-3 text-3xl font-serif text-gray-900 hover:text-hacienda-gold transition-colors group">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
                     </svg>
@@ -216,79 +208,22 @@
                 </a>
             </div>
 
-            <!-- Instagram Embed Widget -->
-            <!-- Note: For production, sign up at embedsocial.com or elfsight.com for a proper Instagram feed widget -->
-            <!-- For now, using a clean grid with working images + CTA to Instagram -->
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <!-- Using working images from the gallery -->
-                    <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
-                        class="group relative aspect-square overflow-hidden rounded-lg">
-                        <img src="/assets/gallery/almazara-main.jpg" alt="La Almazara"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
-                        <div
-                            class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
-                            </svg>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
-                        class="group relative aspect-square overflow-hidden rounded-lg">
-                        <img src="/assets/gallery/wedding-patio.jpg" alt="Bodas"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
-                        <div
-                            class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
-                            </svg>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
-                        class="group relative aspect-square overflow-hidden rounded-lg">
-                        <img src="/assets/gallery/wedding-details.jpg" alt="Detalles"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
-                        <div
-                            class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
-                            </svg>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
-                        class="group relative aspect-square overflow-hidden rounded-lg">
-                        <img src="/assets/gallery/team-building.jpg" alt="Team Building"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">
-                        <div
-                            class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <!-- CTA Button -->
-                <div class="text-center mt-8">
-                    <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
-                        class="inline-flex items-center gap-2 px-8 py-3 border border-gray-300 text-gray-700 hover:border-hacienda-gold hover:text-hacienda-gold transition-all uppercase tracking-widest text-xs font-bold rounded-full">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.27.2-6.78,2.71-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.27,2.71,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.27-.2,6.78-2.71,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.27-2.71-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" />
-                        </svg>
-                        Ver más en Instagram
-                    </a>
-                </div>
+            <!-- 
+                 INSTRUCTIONS FOR USER: 
+                 To implement a live Instagram feed, sign up at Elfsight or EmbedSocial.
+                 Paste your widget script/iframe below this comment.
+            -->
+            <div id="instagram-feed-container"
+                class="max-w-6xl mx-auto min-h-[400px] border border-gray-100 bg-gray-50 flex flex-col items-center justify-center rounded-lg p-6">
+                <p class="text-gray-400 font-light mb-6 text-center" x-text="t('index_insta_placeholder')"></p>
+                <a href="https://www.instagram.com/haciendalasoledad/" target="_blank"
+                    class="px-8 py-3 bg-hacienda-black text-white hover:bg-hacienda-gold hover:text-black transition-all uppercase tracking-widest text-xs font-bold"
+                    x-text="t('index_visit_profile')">
+                </a>
             </div>
         </div>
     </section>
+
 
 
     <!-- Contact Form -->
